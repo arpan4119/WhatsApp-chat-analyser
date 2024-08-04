@@ -78,8 +78,10 @@ Follow these steps to use the Chat Analyser:
 
 
 
-## Recomendation
-   -Click on the three dots (or the menu icon) in the top right corner of the Web app.
-   -Go to Setting
-   -Enable Wide mode
+## Recommendation
 
+For the best experience, enable wide mode in the Streamlit app:
+
+1. **Click on the three dots (or the menu icon) in the top right corner of the web app.**
+2. **Go to Settings.**
+3. **Enable Wide mode.**
