@@ -77,3 +77,9 @@ Follow these steps to use the Chat Analyser:
    ![image](https://github.com/user-attachments/assets/5090e820-661a-4f75-9a68-50ab0eaeb183)
 
 
+
+## Recomendation
+   -Click on the three dots (or the menu icon) in the top right corner of the Web app.
+   -Go to Setting
+   -Enable Wide mode
+
