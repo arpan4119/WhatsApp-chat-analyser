@@ -32,6 +32,7 @@ Follow these steps to use the Chat Analyser:
 6. **Select "Without Media".**
    
    When prompted, choose the "Without Media" option to export only the text messages, which simplifies the file and avoids large media files.
+   
    ![WhatsApp Image 2024-08-04 at 16 38 23_4896368e](https://github.com/user-attachments/assets/fd4aad1f-d7fb-4a90-99e4-b1c11538ae29)
 
    It will take a few seconds to prepare the chat data.
