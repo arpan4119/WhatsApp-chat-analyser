@@ -135,7 +135,7 @@ def find_most_used(df, selected_user):
         all.extend(message.split())
     words , emojis = helper.remove_emojis(all)
 
-    most_common_words = pd.DataFrame(Counter(words).most_common(50), columns=['Word', 'Count'])
+    most_common_words = pd.DataFrame(Counter(words).most_common(200), columns=['Word', 'Count'])
     most_common_emojis = pd.DataFrame(Counter(emojis).most_common(), columns=['Emoji', 'Count'])
 
     col1, col2 = st.columns(2)
