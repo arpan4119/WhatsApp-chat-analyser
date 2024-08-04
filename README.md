@@ -2,7 +2,24 @@
 
 ## Description
 
-Chat Analyser is a web application that allows you to analyze and visualize WhatsApp chat data. You can upload exported WhatsApp chat files, and the app will help you gain insights from your chat history.
+WhatsApp Chat Analyser is a Python-based web application built with Streamlit for visualizing and analyzing WhatsApp chat data. This project allows users to upload exported WhatsApp chat files and generate detailed statistics and insights from their chat history.
+
+### Features
+
+- **Overall Chat Statistics**: Get comprehensive statistics about your WhatsApp chat, including message counts, activity patterns, and more.
+- **User-Specific Analytics**: Analyze chat data for individual users within a group, providing insights into their messaging patterns and activity levels.
+- **Interactive Visualizations**: Utilize Streamlit's interactive frontend to explore and visualize your chat data with various charts and graphs.
+
+### How It Works
+
+1. **Upload a WhatsApp Chat File**: Export your chat data from WhatsApp and upload the resulting text file to the web app.
+2. **Generate Statistics**: The app processes the chat file to produce overall statistics and usage metrics.
+3. **View User Statistics**: For group chats, view detailed statistics for each user, including their activity and message contributions.
+
+### Technologies Used
+
+- **Python**: The core language used for data processing and analysis.
+- **Streamlit**: The frontend framework for creating interactive web applications.
 
 ## How to Use
 
@@ -20,26 +37,29 @@ Follow these steps to use the Chat Analyser:
 3. **Go to More.**
    
    In the dropdown menu, select "More" to access additional options.
-   ![WhatsApp Image 2024-08-04 at 16 38 24_1d85f0c3](https://github.com/user-attachments/assets/1fc7fd0b-fe42-4c46-bf3c-83364d76cd97)
+   ![WhatsApp Image 2024-08-04 at 16 53 25_55d56b80](https://github.com/user-attachments/assets/a02bc9af-6757-488d-9b3a-c0706aaff295)
 
 
-4. **Select Export Chat.**
+5. **Select Export Chat.**
    
    Choose the "Export Chat" option from the menu.
-   ![WhatsApp Image 2024-08-04 at 16 38 23_6cf0473f](https://github.com/user-attachments/assets/30691c6c-a310-4b8f-869f-1ab6ae967766)
+   ![WhatsApp Image 2024-08-04 at 16 53 10_107838f2](https://github.com/user-attachments/assets/1aa9bd35-1368-4ea0-b2c4-0f74c219b9e9)
 
 
-6. **Select "Without Media".**
+
+7. **Select "Without Media".**
    
    When prompted, choose the "Without Media" option to export only the text messages, which simplifies the file and avoids large media files.
    
-   ![WhatsApp Image 2024-08-04 at 16 38 23_4896368e](https://github.com/user-attachments/assets/fd4aad1f-d7fb-4a90-99e4-b1c11538ae29)
+   ![WhatsApp Image 2024-08-04 at 16 52 30_1f246130](https://github.com/user-attachments/assets/6826a2e4-e66d-4336-ba64-e1e2a89a9fa8)
+
 
    It will take a few seconds to prepare the chat data.
-   ![WhatsApp Image 2024-08-04 at 16 38 23_917c1f42](https://github.com/user-attachments/assets/a3ef45bf-5747-43d1-9bee-5cd472b070cd)
+   ![WhatsApp Image 2024-08-04 at 16 52 51_a5b4ac91](https://github.com/user-attachments/assets/1270023d-977e-4046-95fd-8a6dc6c8a99b)
 
 
-8. **Save the chat file to your device.**
+
+9. **Save the chat file to your device.**
    
    Choose to save the chat file on your device. The file will usually be in a ZIP format.
    ![Screenshot 2024-08-04 162911](https://github.com/user-attachments/assets/e6acc9d5-fff6-41df-8a20-6073e4165cf9)
