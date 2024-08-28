@@ -7,6 +7,7 @@ import pandas as pd
 import preprocessor, helper
 from wordcloud import WordCloud
 from collections import Counter
+import zipfile
 
 def all_details(df, selected_user):
         st.title("All Details")
@@ -171,20 +172,37 @@ def activity_map(df, selected_user):
 def run_chat_analyser():
     st.sidebar.title("Chat Analyser")
 
-    uploaded_file = st.sidebar.file_uploader("Upload a File")
+    uploaded_file = st.sidebar.file_uploader("Upload a ZIP File", type=["zip"])
 
     if uploaded_file is None:
-        st.info("Please upload a file.")
+        st.info("Please upload a ZIP file.")
         return
-    file_name = uploaded_file.name
+
+    with zipfile.ZipFile(uploaded_file, 'r') as zip_ref:
+        # Extract all the contents of zip file in the current directory
+        zip_ref.extractall("/tmp")
+
+    # Search for the WhatsApp chat text file in the extracted files
+    file_name = None
+    for file in zip_ref.namelist():
+        if re.search(r"WhatsApp Chat with (.+?)\.txt", file):
+            file_name = file
+            break
+
+    if file_name is None:
+        st.warning("Could not find a WhatsApp chat file in the ZIP archive.")
+        return
+
     match = re.search(r"WhatsApp Chat with (.+?)\.txt", file_name)
     if match:
         contact_name = match.group(1)
         st.title(f"Chat Name: {contact_name}")
     else:
         st.warning("Could not extract contact name from file name.")
-    bytes_data = uploaded_file.getvalue()
-    data = bytes_data.decode("utf-8")
+    
+    with open(f"/tmp/{file_name}", "r", encoding="utf-8") as file:
+        data = file.read()
+
     df = preprocessor.processFile(data)
 
     users_list = df['User'].unique().tolist()
@@ -193,7 +211,6 @@ def run_chat_analyser():
     users_list.insert(0, "All Users")
     selected_user = st.sidebar.selectbox("Select User", users_list)
 
-    
     if st.sidebar.button("Show User Analysis"):
         all_details(df, selected_user)
         timeline(df, selected_user)
