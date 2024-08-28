@@ -65,15 +65,9 @@ Follow these steps to use the Chat Analyser:
    ![Screenshot 2024-08-04 162911](https://github.com/user-attachments/assets/e6acc9d5-fff6-41df-8a20-6073e4165cf9)
 
 
-10. **Unzip the file.**
+10. **Upload the zip file to the web app.**
    
-   Extract the contents of the ZIP file. You will find a text file named in the format: `WhatsApp chat with <contact name/group name>.txt`.
-   ![Screenshot 2024-08-04 163019](https://github.com/user-attachments/assets/0bb6eae0-0f47-48f3-8cff-7121f38a7932)
-
-
-11. **Upload the text file to the web app.**
-   
-   Visit the Chat Analyser web app and upload the extracted text file to start analyzing your chat data.
+   Visit the Chat Analyser web app and upload the ZIP file to start analyzing your chat data.
    ![image](https://github.com/user-attachments/assets/5090e820-661a-4f75-9a68-50ab0eaeb183)
 
 
