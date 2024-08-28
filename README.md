@@ -65,6 +65,7 @@ Follow these steps to use the Chat Analyser:
    ![Screenshot 2024-08-04 162911](https://github.com/user-attachments/assets/e6acc9d5-fff6-41df-8a20-6073e4165cf9)
 
 
+
 10. **Upload the zip file to the web app.**
    
    Visit the Chat Analyser web app and upload the ZIP file to start analyzing your chat data.
